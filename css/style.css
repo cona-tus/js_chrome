@@ -1,4 +1,4 @@
-.hidden {
+.none {
   display: none;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .mobile__container {
   background: linear-gradient(#f7b84f, #ea424b, #ad64c2);
-  width: 310px;
+  width: 294px;
   height: 482px;
 }
 
@@ -50,4 +50,16 @@ body {
 
 .clock__container {
   margin-right: 4px;
+}
+
+#login-form {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  margin: 12px;
+}
+
+#login-form input {
+  border: none;
+  background-color: transparent;
 }
