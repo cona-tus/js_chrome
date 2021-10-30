@@ -1,3 +1,40 @@
 .hidden {
   display: none;
 }
+
+body {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#bgImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.mobile {
+  background-color: black;
+  margin: 40px 80px;
+  width: 322px;
+  height: 622px;
+  border-radius: 32px;
+  border: 4px solid silver;
+  display: flex;
+  align-items: center;
+}
+
+.mobile__container {
+  background-color: white;
+  width: 322px;
+  height: 482px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
