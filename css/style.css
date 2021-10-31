@@ -71,10 +71,21 @@ html {
 }
 
 /* gretting */
-#greeting img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+#greeting {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  padding: 12px 14px;
+  margin: 24px 12px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px rgba(0, 0, 0, 0.025);
+  transition: all 0.2s;
+}
+
+#greeting:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* login-form */
@@ -85,6 +96,11 @@ html {
   margin: 20px 12px;
   font-size: 14px;
   position: relative;
+  transition: all 0.3s;
+}
+
+#login-form:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #login-form input:last-child {
@@ -114,21 +130,25 @@ html {
   color: lightgray;
 }
 
-#greeting {
-  padding: 24px;
-}
-
 /* dictionary */
 #dictionary {
   padding: 12px 14px;
   margin: 12px;
-  background: linear-gradient(#e75e6d, #e44048);
+  background: linear-gradient(#ec707f, #f3525a);
   border-radius: 0px 0px 8px 8px;
   display: flex;
   flex-direction: column;
   font-weight: 400;
   font-size: 14px;
   color: black;
+  transition: all 0.3s;
+}
+
+#dictionary:hover {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
 }
 
 #dictionary span:last-child {
@@ -138,7 +158,7 @@ html {
 .expression {
   padding: 6px 14px;
   margin: -12px 12px;
-  background: linear-gradient(#f37c8a, #e75e6d);
+  background-color: #ec707f;
   border-radius: 8px 8px 0px 0px;
   border-bottom: 1px solid lightgray;
   font-size: 12px;
@@ -159,6 +179,11 @@ html {
   border-radius: 8px 8px 0px 0px;
   border-bottom: 1px solid lightgray;
   background-color: #fdce0b;
+  transition: all 0.3s;
+}
+
+#todo-form input:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #todo-form input::placeholder {
@@ -184,6 +209,10 @@ html {
   color: red;
 }
 
+#todo-form input:focus + i {
+  color: white;
+}
+
 /* todo-list */
 .todo__container {
   padding: 12px;
@@ -200,6 +229,12 @@ html {
   font-weight: 300;
   color: black;
   border-bottom: 1px solid lightgray;
+  background-color: white;
+  transition: all 0.2s;
+}
+
+#todo-list li:hover {
+  background-color: #fdce0b;
 }
 
 #todo-list button {
@@ -240,6 +275,11 @@ html {
   color: white;
   font-size: 32px;
   line-height: 48px;
+  transition: all 0.3s;
+}
+
+.dock:first-child:hover {
+  background: linear-gradient(#f1f1f1, #c2c2c2);
 }
 
 .dock:nth-child(2) {
@@ -252,6 +292,11 @@ html {
   color: white;
   font-size: 36px;
   line-height: 48px;
+  transition: all 0.3s;
+}
+
+.dock:nth-child(2):hover {
+  background: linear-gradient(#f1f1f1, #c2c2c2);
 }
 
 .dock:nth-child(3) {
@@ -269,6 +314,11 @@ html {
   background: linear-gradient(#65e4f1, #205ef3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.3s;
+}
+
+.dock:nth-child(3):hover {
+  background: linear-gradient(#f1f1f1, #c2c2c2);
 }
 
 .dock:nth-child(4) {
@@ -281,4 +331,18 @@ html {
   color: black;
   font-size: 36px;
   line-height: 48px;
+  transition: all 0.3s;
+}
+
+.dock:nth-child(4):hover {
+  background: linear-gradient(#f1f1f1, #c2c2c2);
+}
+
+/* media */
+
+@media screen and (max-width: 768px) {
+  .mobile {
+    margin: 0;
+    padding: 0;
+  }
 }
