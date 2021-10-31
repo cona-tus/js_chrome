@@ -136,14 +136,18 @@ html {
 }
 
 /* todo-form */
+#todo-form {
+  position: relative;
+}
 
 #todo-form input {
   width: 258px;
   border: none;
-  background: linear-gradient(#ffee71, #fbc91d);
   padding: 6px;
   margin: 0px 12px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid lightgray;
+  background-color: #fdce0b;
 }
 
 #todo-form input::placeholder {
@@ -154,25 +158,51 @@ html {
 }
 
 #todo-form input:focus {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  outline: none;
 }
 
 #todo-form input:focus::placeholder {
-  color: white;
+  color: lightgray;
+}
+
+#todo-form i {
+  position: absolute;
+  right: 20px;
+  bottom: 6px;
+  color: red;
 }
 
 /* todo-list */
-
-#todo__container {
-  position: absolute;
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.7);
-  justify-content: center;
+.todo__container {
+  padding: 12px;
+  margin: 0px 12px;
+  background-color: white;
+  border-radius: 0px 0px 8px 8px;
 }
 
-#todo-li {
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
   font-size: 12px;
+  font-weight: 300;
   color: black;
+  border-bottom: 1px solid lightgray;
+}
+
+#todo-list button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 8px;
+  color: black;
+}
+
+#todo-list button:hover {
+  color: red;
 }
 
 /* dockbar */
