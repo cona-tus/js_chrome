@@ -78,9 +78,7 @@ html {
 }
 
 .mobile__container {
-  background-image: url("/img/wallpaper.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: linear-gradient(#52bbd5, #5b3e87);
   width: 294px;
   height: 482px;
   position: relative;
