@@ -70,15 +70,26 @@ html {
   margin-right: 6px;
 }
 
+/* gretting */
+#greeting img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 /* login-form */
 #login-form {
   background: white;
   padding: 12px;
   border-radius: 8px;
   margin: 20px 12px;
-  display: flex;
-  justify-content: space-between;
   font-size: 14px;
+  position: relative;
+}
+
+#login-form input:last-child {
+  position: absolute;
+  right: 8px;
 }
 
 #login-form input {
