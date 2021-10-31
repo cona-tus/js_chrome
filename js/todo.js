@@ -28,6 +28,7 @@ function paintToDo(newTodo) {
   li.appendChild(span);
   li.appendChild(button);
   toDoList.appendChild(li);
+  li.id = "todo-li";
 }
 
 function handleToDoSubmit(event) {

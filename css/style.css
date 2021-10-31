@@ -72,15 +72,35 @@ html {
 
 /* login-form */
 #login-form {
-  background-color: white;
-  padding: 24px;
+  background: white;
+  padding: 12px;
   border-radius: 8px;
-  margin: 12px;
+  margin: 20px 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
 #login-form input {
   border: none;
   background-color: transparent;
+  color: black;
+}
+
+#login-form input:nth-child(2) {
+  cursor: pointer;
+}
+
+#login-form input::placeholder {
+  color: black;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form input:focus::placeholder {
+  color: lightgray;
 }
 
 #greeting {
@@ -89,19 +109,23 @@ html {
 
 /* dictionary */
 #dictionary {
-  padding: 14px;
+  padding: 12px 14px;
   margin: 12px;
   background: linear-gradient(#e75e6d, #e44048);
   border-radius: 0px 0px 8px 8px;
   display: flex;
-  justify-content: space-between;
-  color: black;
+  flex-direction: column;
   font-weight: 400;
   font-size: 14px;
+  color: black;
+}
+
+#dictionary span:last-child {
+  font-size: 12px;
 }
 
 .expression {
-  padding: 6px;
+  padding: 6px 14px;
   margin: -12px 12px;
   background: linear-gradient(#f37c8a, #e75e6d);
   border-radius: 8px 8px 0px 0px;
@@ -130,8 +154,7 @@ html {
 }
 
 #todo-form input:focus {
-  outline: none;
-  background: linear-gradient(#1d2123, #27272d);
+  background-color: black;
 }
 
 #todo-form input:focus::placeholder {
@@ -139,10 +162,16 @@ html {
 }
 
 /* todo-list */
-#todo-list {
+
+#todo__container {
   position: absolute;
-  left: 40px;
+  display: flex;
   background-color: rgba(255, 255, 255, 0.7);
+  justify-content: center;
+}
+
+#todo-li {
+  font-size: 12px;
   color: black;
 }
 
