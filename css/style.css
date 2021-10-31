@@ -89,12 +89,60 @@ html {
 
 /* dictionary */
 #dictionary {
-  padding: 16px;
+  padding: 14px;
   margin: 12px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
+  background: linear-gradient(#e75e6d, #e44048);
+  border-radius: 0px 0px 8px 8px;
   display: flex;
   justify-content: space-between;
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.expression {
+  padding: 6px;
+  margin: -12px 12px;
+  background: linear-gradient(#f37c8a, #e75e6d);
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 1px solid lightgray;
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+}
+
+/* todo-form */
+
+#todo-form input {
+  width: 258px;
+  border: none;
+  background: linear-gradient(#ffee71, #fbc91d);
+  padding: 6px;
+  margin: 0px 12px;
+  border-radius: 8px;
+}
+
+#todo-form input::placeholder {
+  color: black;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 6px;
+}
+
+#todo-form input:focus {
+  outline: none;
+  background: linear-gradient(#1d2123, #27272d);
+}
+
+#todo-form input:focus::placeholder {
+  color: white;
+}
+
+/* todo-list */
+#todo-list {
+  position: absolute;
+  left: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
   color: black;
 }
 
