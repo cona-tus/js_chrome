@@ -29,6 +29,8 @@ html {
   object-fit: cover;
 }
 
+/* home btn */
+
 /* mobile */
 .mobile {
   background-color: whitesmoke;
@@ -43,6 +45,36 @@ html {
   align-items: center;
   justify-content: center;
   color: white;
+  position: relative;
+}
+
+.home__camera {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 50%;
+  top: 40px;
+  left: 100px;
+}
+
+.home__speaker {
+  position: absolute;
+  width: 60px;
+  height: 2.5px;
+  background-color: rgb(53, 53, 53);
+  top: 43px;
+  left: 130px;
+}
+
+.home__btn {
+  position: absolute;
+  bottom: 20px;
+  width: 34px;
+  height: 34px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px -1px #707070 inset;
 }
 
 .mobile__container {
@@ -341,8 +373,12 @@ html {
 /* media */
 
 @media screen and (max-width: 768px) {
-  .mobile {
-    margin: 0;
-    padding: 0;
+  #bgImage {
+    display: none;
+  }
+
+  .mobile__container {
+    margin: 0px;
+    padding: 0px;
   }
 }
