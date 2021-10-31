@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+/* background */
 body {
   display: flex;
   justify-content: flex-end;
@@ -25,6 +26,7 @@ body {
   height: 100%;
 }
 
+/* mobile */
 .mobile {
   background-color: whitesmoke;
   margin: 40px 120px;
@@ -45,8 +47,10 @@ body {
   background-repeat: no-repeat;
   width: 294px;
   height: 482px;
+  position: relative;
 }
 
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -62,6 +66,7 @@ body {
   margin-right: 6px;
 }
 
+/* login-form */
 #login-form {
   background-color: white;
   padding: 24px;
@@ -74,36 +79,57 @@ body {
   background-color: transparent;
 }
 
+#greeting {
+  padding: 24px;
+}
+
+/* dictionary */
+#dictionary {
+  padding: 16px;
+  margin: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+/* dockbar */
 .dockbar {
   display: flex;
   justify-content: space-between;
-
-  background-color: white;
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
   padding: 16px;
   margin: 12px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 4px;
+  width: 236px;
 }
 
 .dock:first-child {
   width: 48px;
   height: 48px;
-  background: yellowgreen;
+  background: linear-gradient(#65f856, #27de17);
   align-items: center;
   text-align: center;
   border-radius: 12px;
   color: white;
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 48px;
 }
 
 .dock:nth-child(2) {
   width: 48px;
   height: 48px;
-  background: yellowgreen;
+  background: linear-gradient(#65f856, #27de17);
   align-items: center;
   text-align: center;
   border-radius: 12px;
   color: white;
   font-size: 36px;
+  line-height: 48px;
 }
 
 .dock:nth-child(3) {
@@ -113,17 +139,24 @@ body {
   align-items: center;
   text-align: center;
   border-radius: 12px;
-  color: skyblue;
   font-size: 36px;
+  line-height: 48px;
+}
+
+.dock:nth-child(3) i {
+  background: linear-gradient(#65e4f1, #205ef3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .dock:nth-child(4) {
   width: 48px;
   height: 48px;
-  background: lightgray;
+  background: linear-gradient(#eaeaec, #8b8e93);
   align-items: center;
   text-align: center;
   border-radius: 12px;
   color: black;
   font-size: 36px;
+  line-height: 48px;
 }
